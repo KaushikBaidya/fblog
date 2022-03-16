@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AppBar from './Components/Appbar/AppBar'
 import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
-import SignUp from './Components/SignUp/SignUp'
+import CreatePost from './Components/Create/CreatePost.jsx'
 import './App.css'
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <AppBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/createpost" element={<CreatePost />} />
       </Routes>
     </Router>
   )
