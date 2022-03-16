@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AppBar from './Components/Appbar/AppBar'
 import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import SignUp from './Components/SignUp/SignUp'
+import './App.css'
 
 function App() {
   return (
